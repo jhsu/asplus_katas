@@ -26,7 +26,7 @@ class LookAndSayTest < Test::Unit::TestCase
   end
   
   def test_1_returns_1211_after_3_steps
-    assert_equal "1211", LookAndSay.new("1").next.next.to_s
+    assert_equal "1211", LookAndSay.new("1").next.next.next.to_s
   end
   
 end
