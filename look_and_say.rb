@@ -3,15 +3,15 @@ require 'test/unit'
 class LookAndSay
   
   def initialize(string)
-    @current = string
+    # Implement me!
   end
 
   def next
-    self
+    # Implement me!
   end
 
   def to_s
-    @current
+    # Implement me!
   end
   
 end
