@@ -1,20 +1,5 @@
 require 'test/unit'
-
-class LookAndSay
-  
-  def initialize(string)
-    # Implement me!
-  end
-
-  def next
-    # Implement me!
-  end
-
-  def to_s
-    # Implement me!
-  end
-  
-end
+require 'look_and_say'
 
 class LookAndSayTest < Test::Unit::TestCase
 
@@ -23,21 +8,25 @@ class LookAndSayTest < Test::Unit::TestCase
       LookAndSay.new("foo")
     end    
   end
+
+  def test_returns_same_value_if_next_is_not_called
+    assert_equal "123454321", LookAndSay.new("123454321").to_s
+  end
   
   def test_22_is_a_fixed_point
-    assert_equal LookAndSay.new("22").next.to_s, "22"
+    assert_equal "22", LookAndSay.new("22").next.to_s
   end
   
   def test_1_returns_11
-    assert_equal LookAndSay.new("1").next.to_s, "11"
+    assert_equal "11", LookAndSay.new("1").next.to_s
   end
 
   def test_1_returns_21_after_2_steps
-    assert_equal LookAndSay.new("1").next.next.to_s, "21"
+    assert_equal "21", LookAndSay.new("1").next.next.to_s
   end
   
   def test_1_returns_1211_after_3_steps
-    assert_equal LookAndSay.new("1").next.next.to_s, "1211"
+    assert_equal "1211", LookAndSay.new("1").next.next.to_s
   end
   
 end
