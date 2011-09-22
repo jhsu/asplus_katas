@@ -20,7 +20,12 @@ class LookAndSayTest < Test::Unit::TestCase
   def test_1_returns_11
     assert_equal "11", LookAndSay.new("1").next.to_s
   end
-
+  
+  def test_111221_returns_312211
+    assert_equal "312211", LookAndSay.new("111221").next.to_s
+    
+  end
+  
   def test_1_returns_21_after_2_steps
     assert_equal "21", LookAndSay.new("1").next.next.to_s
   end
