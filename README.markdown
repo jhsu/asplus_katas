@@ -5,6 +5,7 @@ This is a series of test files for writing Code Katas at AS+.  Please clone this
 ### Katas
 
 * [Look and Say Sequence](http://en.wikipedia.org/wiki/Look-and-say_sequence)
+* Bowling Scoring
 
 *Other Katas will be forthcoming.*
 
