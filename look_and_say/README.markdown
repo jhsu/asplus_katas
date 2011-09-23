@@ -16,7 +16,7 @@ The idea is similar to that of run-length encoding.
 
 ### Code Kata
 
-This kata contains two files: `look_and_say.rb` and `look_and_say_spec.rb`.  `look_and_say.rb` defines a class `LookAndSay`, with three methods: `initialize`, `next`, and `to_s`.  Your task is to implement these three methods, so that when you run
+This kata contains two files: `look_and_say.rb` and `look_and_say_spec.rb`.  `look_and_say.rb` defines a class `LookAndSay`, with three methods: `initialize`, `next`, and `to_s`.  Your task is to implement these three methods, so that when you run:
 
     ruby look_and_say_spec.rb
     
