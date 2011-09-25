@@ -18,4 +18,9 @@ all of the tests it contains pass.
 
 The tests will pass in to the `fingerings` method an array of notes (for instance, `[0, 4, 7]`).  The method expects to receive back an array of fingerings that will play that chord.  A fingering is an array of 4 integers in (0..12), corresponding to positions on the fretboard for each of the four strings.
 
-In order for a fingering to play a chord, each of the notes in the chord (modulus 12) must be played on at least one string, and no string can play a note not in that chord.
+In order for a fingering to play a chord, the following must be satisfied:
+
+1. Each of the notes in the chord (modulus 12) must be played on at least one string
+2. No string can play a note not in that chord.
+3. All fingerings actually on the fretboard (ie, non-0) must be within at most 4 positions from each other.
+4. *Is this sufficient?*

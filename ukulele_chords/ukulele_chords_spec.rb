@@ -22,10 +22,10 @@ class UkuleleChordsSpec < Test::Unit::TestCase
     assert_equal [0, 0, 0, 3], fingerings.first
   end
   
-  def test_fingerings_returns_N_possible_c_chord_fingerings
+  def test_fingerings_returns_32_possible_c_chord_fingerings
     u = Ukulele.new
     fingerings = u.fingerings([0, 4, 7])
-    assert_equal 1_000, fingerings.length
+    assert_equal 32, fingerings.length
   end
   
 end
