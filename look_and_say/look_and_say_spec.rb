@@ -9,7 +9,7 @@ class LookAndSayTest < Test::Unit::TestCase
   #                       #
   #########################
   
-  def test_fails_on_non_numbers
+  def test_initialize_fails_on_non_numbers
     assert_raise(ArgumentError, "Should not allow strings with non-digit characters") do
       LookAndSay.new("foo")
     end    
