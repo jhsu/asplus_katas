@@ -23,5 +23,4 @@ In order for a fingering to play a chord, the following must be satisfied:
 1. Each of the notes in the chord (modulus 12) must be played on at least one string
 2. No string can play a note not in that chord.
 3. All fingerings actually on the fretboard (ie, non-0) must be within at most 4 positions from each other.
-4. The 4 played notes are no more than 1 octave apart.
-5. *Is this sufficient?*
+4. The 4 played notes are exactly 1 octave apart.
