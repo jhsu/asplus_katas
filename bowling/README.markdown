@@ -2,10 +2,14 @@
 
 A game of bowling consists of 10 *frames*, each of which contains 1 - 3 *throws*.  The score for a throw is recoded as follows:
 
+#### In frames 1 - 9
+
 * "-": this throw is a *gutterball*, and worth 0 points.
 * "1"-"9": this throw is worth its value in points
 * "/": this throw is called a *spare*.  It occurs when the second throw of a frame knocks down the remaining pins, and in the first 9 frames, is worth `10 - the frame's first throw + the next throw` in points.  In the last frame, it is only worth `10 - the frame's first throw` points.
 * "X": this throw is called a *strike*.  You do the math.
+
+#### In frame 10
 
 ### Code Kata
 
