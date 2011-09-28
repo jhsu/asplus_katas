@@ -4,7 +4,7 @@ require 'bowling'
 class BowlingTest < Test::Unit::TestCase
 
   def test_invalid_game_throws_an_exception
-    assert_raise(StandardError, "Should not accept an invalid game") do
+    assert_raise(Bowling::GameTooShort, "Should not accept an invalid game") do
       Bowling.new("X" * 10)
     end    
   end
