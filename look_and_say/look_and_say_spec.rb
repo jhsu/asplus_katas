@@ -1,5 +1,6 @@
 require 'test/unit'
 require_relative 'look_and_say'
+begin; require 'turn'; rescue LoadError; end
 
 class LookAndSayTest < Test::Unit::TestCase
 
