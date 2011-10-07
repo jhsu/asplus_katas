@@ -1,5 +1,6 @@
 require 'test/unit'
-require 'ukulele_chords'
+require_relative 'ukulele_chords'
+begin; require 'turn'; rescue LoadError; end
 
 class UkuleleChordsSpec < Test::Unit::TestCase
 
