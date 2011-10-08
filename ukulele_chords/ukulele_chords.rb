@@ -37,6 +37,22 @@ class Ukulele
     end
   end
 
+  def print_fingerings(chord)
+    fingerings(chord).each do |fingering|
+      puts "  123456789tet"
+      fingering.each_with_index do |fret, index|
+        before_fret = "_" * (fret > 0 ? fret - 1 : 0)
+        after_fret = "_" * (FRET_COUNT - fret)
+        if fret == 0
+          puts "#{number_to_letter_note(STRING_NOTES[index])}|" + "_" * 12
+        else
+          puts "#{number_to_letter_note(STRING_NOTES[index])}|#{before_fret}x#{after_fret}"
+        end
+      end
+      puts
+    end
+  end
+
 private
   def note_from_fret(string_num, fret_num)
     STRING_NOTES[string_num] + fret_num
@@ -66,5 +82,21 @@ private
       notes << note_from_fret(pair[0], pair[1])
     end
     (notes.max - notes.min) == NOTES_IN_OCTAVE
+  end
+  def number_to_letter_note(note_number)
+    case note_number
+    when 0; 'C';
+    when 1; 'C#';
+    when 2; 'D';
+    when 3; 'D#';
+    when 4; 'E';
+    when 5; 'F';
+    when 6; 'F#';
+    when 7; 'G';
+    when 8; 'G#';
+    when 9; 'A';
+    when 10; 'A#';
+    when 11; 'B';
+    end
   end
 end
