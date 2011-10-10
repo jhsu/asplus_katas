@@ -1,5 +1,6 @@
 require 'test/unit'
-require 'look_and_say'
+require './look_and_say'
+require 'turn'
 
 class LookAndSayTest < Test::Unit::TestCase
 
