@@ -1,8 +1,13 @@
 ### Ukulele Chords
 
-The Ukulele is a 4-stringed musical instrument.  Like guitars, each string is tuned to a different note, and the strings are held down at different points along a fretboard to make a string play different notes.
+The Ukulele is a 4-stringed musical instrument.  Like guitars, each string is tuned
+to a different note, and the strings are held down at different points along a
+fretboard to make a string play different notes.
 
-The Ionian Scale that most western music uses contains 12 notes, each separated by half-steps.  For this kata, we'll call them `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]`.  Ukuleles are usually tuned to G - C - E - A, but for this task we'll call them 7 - 0 - 4 - 9.  Each location on the fretboard is one half step higher, or +1 numerically.
+The Ionian Scale that most western music uses contains 12 notes, each separated by
+half-steps.  For this kata, we'll call them `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]`.
+Ukuleles are usually tuned to G - C - E - A, but for this task we'll call them
+7 - 0 - 4 - 9.  Each location on the fretboard is one half step higher, or +1 numerically.
 
 Notes that are 12 points above each other are said to be the same note, separated by an octave.
 
